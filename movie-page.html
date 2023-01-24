@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"/>
+
+    <!-- Font Awesome Script  -->
+    <script src="https://kit.fontawesome.com/cd5bd85960.js" crossorigin="anonymous"></script>
+    
+    <!-- Link of Local CSS  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="movie-page.css">
+
+    <title>Movie - Details</title>
+  </head>
+  <body id="movie-page">
+    
+    <header>
+        <!-- Navbar -->
+
+        <nav class="navbar fixed-top navbar-dark text-white bg-dark">
+            <div class="container-fluid d-flex justify-content-around  row row-cols-4 marginNav">
+                <div class="col-2 container-fluid">    
+                    <a class="navbar-brand text-white d-flex justify-content-start align-items-center"
+                        href="./index.html">
+                        <img src="bg image/imdb.png" alt="" height="44px" class="d-inline-block">
+                        
+                        <span class="logo-text text-white d-none d-sm-none d-md-block"><i class="fa-5 fa-solid fa-house mx-2" height="100px"></i></span>
+                    </a>
+                </div>
+                <div class="col-8">   
+                    <input class="form-control me-2 search-input rounded-pill" height="82px" type="text" placeholder="Enter to Search your movies ..." aria-label="Search" id="search-input" > 
+                        
+                </div>
+
+                <div class="col-2 d-flex justify-content-end align-items-center ">
+                    
+                    <button type="button" class=" navFavButton btn btn-secondary position-relative rounded-2">
+                        <img src="bg image/favourite.jpg" alt="" height="34px" width="90px" class="d-inline-block">
+                                            
+                        <i style="color:red" class="fa-lg fa-solid fa-heart mx-2"></i>
+                        <span class="favNotification position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+                        
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        
+    </header>
+    
+
+    <!-- Main Section -->
+    <main role="main">
+
+
+        <div class="default-container">
+            <div class="card mb-3" style="background-color:none;" id="movie-details-container">
+
+            </div>
+        </div>
+        
+
+        <!-- starting of search results -->
+        <div class="search-result-container">
+            <div class="searched-text-container">
+
+
+
+            </div>
+
+            <div class="container-fluid ">
+                <div class="album py-5 bg-black ">
+                    
+                    <div class="container-fluid ">
+
+                        <div class="row d-flex justify-content-center mt-4 align-items-center " id="searchContainer"
+                            data-search-container>
+
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-center">
+                        
+
+                    </ul>
+                </nav>
+            </div>
+
+
+    </main>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Link of JavaScript  -->
+    <script src="index.js"></script>
+  </body>
+</html>
